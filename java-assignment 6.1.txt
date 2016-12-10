@@ -1,0 +1,25 @@
+package myPack;
+import java.util.*;
+
+public class VariableStack {
+	static Thread thread = new Thread();
+public static void main(String args[]) throws InterruptedException{
+	System.out.println("Enter the time for timer in seconds");
+	Scanner scan= new Scanner(System.in);
+	int n= scan.nextInt();
+	
+	System.out.println("Enter the maximum time for timer");
+	Scanner scan1= new Scanner(System.in);
+	int m= scan1.nextInt();
+	Timer timer;
+	for(int i=m;i>=0;i--){
+		for(int j=n;j>=0;j--){
+			 thread.sleep(1000);
+			   
+		}
+		System.out.println("TIME UP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+	}
+}
+
+}
+
